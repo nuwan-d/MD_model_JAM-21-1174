@@ -9,4 +9,4 @@ The provided MATLAB code can be used to generate position-time plots of density 
 
 <img src="x-t_density.JPG" width="450">
 
-More information about the model is available in our paper.
+More information is available in our paper.
