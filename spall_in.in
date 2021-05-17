@@ -1,0 +1,61 @@
+# Nuwan Dewapriya (2021/05/17)
+
+# ------------------------ INITIALIZATION ----------------------------
+units 		real
+boundary	p p p
+atom_style	full
+
+# ----------------- Interaction potential definition-----------------
+
+processors 	1 * *
+read_data 	"polyurethana_60nm.data"
+include         "polyurethana_60nm.params"
+kspace_style	pppm 1e-06
+
+# ----------------- Minimize Section -----------------
+
+min_style          cg
+min_modify         dmax 0.1
+minimize           1e-8 1e-10 20000 50000
+reset_timestep     0
+
+
+variable tstp equal 0.1
+timestep ${tstp}
+variable tdamp equal "v_tstp * 100"
+
+
+fix  	1 all nve
+fix  	2 all langevin 300 300 ${tdamp} 90429997
+
+thermo 1000
+
+run 100000
+
+unfix 2
+
+
+#--------------------COMPUTE CHUNK-----------------------
+
+compute		ch_id all chunk/atom bin/1d x lower 10 units box
+
+fix 	    	ave_ch all ave/chunk 1 100 200 ch_id density/mass file density.out
+
+dump      	1 all atom 100000 shock_movie.lammpstrj
+
+
+#--------------------define piston-----------------------
+
+region 		piston block INF -580 INF INF INF INF units box
+group          piston region piston
+
+
+#-------------- Shock -------------------------------------------
+
+fix move_pist piston move linear 0.02 0 0 units box
+
+run            100000
+
+unfix move_pist
+
+run            400000
