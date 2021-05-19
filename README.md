@@ -11,4 +11,6 @@ The provided MATLAB code, x_t_density.m, can be used to generate position-time p
 
 If you are using [Compute Canada](https://www.computecanada.ca/home/), the "sub.sh" script can be used to submit the job. The simulation will need ~3500 core-hours.
 
+If you would like to learn more about the model, please read our paper.
+
 Good luck with your MD simulations.
