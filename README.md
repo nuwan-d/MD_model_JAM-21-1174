@@ -1,7 +1,9 @@
 # Molecular dynamics simulations of shock propagation and spallation in amorphous polymers
 
-I would like to share the molecular dynamics (MD) model used in [our recent paper](https://asmedigitalcollection.asme.org/appliedmechanics/article/doi/10.1115/1.4051238/1109502/Molecular-Dynamics-Simulations-of-Shock) (see below). This repository contains the LAMMPS files required to run MD simulations of shock propagation and spallation of polyurethane. The LAMMPS data file (240 MB) can be downloaded [from here.](https://drive.google.com/file/d/1G8xaw0wd_ilcfPe6dSBAemUxr_OrjuH_/view?usp=sharing)
-The input and parameters files are available above (“spall_in.in” and “polyurethana_60nm.params”). We used the [Enhanced Monte Carlo](http://montecarlo.sourceforge.net/emc/Welcome.html) pcakage to create the model and the [Open Visualization Tool](https://www.ovito.org/) for visualization.
+We are currently investigating the shock response of materials using molecular dynamics (MD). This project showed us that the preparation of properly equilibrated MD models can be very challenging even for someone with a strong background in molecular modeling. Therefore, we would like to share some of our recent MD models with the research community. 
+
+This repository contains the MD model used in [our recent paper](https://asmedigitalcollection.asme.org/appliedmechanics/article/doi/10.1115/1.4051238/1109502/Molecular-Dynamics-Simulations-of-Shock) (see below). This repository contains the LAMMPS files required to run MD simulations of shock propagation and spallation of polyurethane. The LAMMPS data file (240 MB) can be downloaded [from here.](https://drive.google.com/file/d/1G8xaw0wd_ilcfPe6dSBAemUxr_OrjuH_/view?usp=sharing)
+The input and parameters files are available above (“spall_in.in” and “polyurethane_60nm.params”). We used the [Enhanced Monte Carlo](http://montecarlo.sourceforge.net/emc/Welcome.html) pcakage to create the model and the [Open Visualization Tool](https://www.ovito.org/) for visualization.
 
 A brief video overview of this model (and another) is [available here](https://youtu.be/hgZXvUdr-Qo). 
 
