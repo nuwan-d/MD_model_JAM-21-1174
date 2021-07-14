@@ -8,8 +8,8 @@ atom_style	full
 # ----------------- Interaction potential definition-----------------
 
 processors 	1 * *
-read_data 	"polyurethana_60nm.data"
-include         "polyurethana_60nm.params"
+read_data 	"polyurethane_60nm.data"
+include         "polyurethane_60nm.params"
 kspace_style	pppm 1e-06
 
 # ----------------- Minimize Section -----------------
