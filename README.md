@@ -19,4 +19,6 @@ If you are using [Compute Canada](https://www.computecanada.ca/home/), the "sub.
 
 If you would like to learn more about the model, please read [our paper](https://asmedigitalcollection.asme.org/appliedmechanics/article/doi/10.1115/1.4051238/1109502/Molecular-Dynamics-Simulations-of-Shock).
 
+A similar LAMMPS model for polyurea is [available here](https://zenodo.org/record/5099542#.YO7PEOhKhPY).
+
 Good luck with your MD simulations.
