@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/368240107.svg)](https://zenodo.org/badge/latestdoi/368240107)
+
 # Molecular dynamics simulations of shock propagation and spallation in amorphous polymers
 
 We are currently investigating the shock response of materials using molecular dynamics (MD). This project showed us that the preparation of properly equilibrated MD models can be very challenging even for someone with a strong background in molecular modeling. Therefore, we would like to share some of our recent MD models with the research community. 
